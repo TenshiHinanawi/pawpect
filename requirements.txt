@@ -3,9 +3,6 @@ Django==4.2.7                # Long-Term Support (LTS) release
 asgiref==3.6.0               # ASGI framework support
 sqlparse==0.4.4              # SQL parsing library used by Django
 
-# Database drivers (adjust based on your database)
-mysqlclient==2.2.0           # MySQL database backend (use if needed)
-
 # Static files and media serving
 whitenoise==6.5.0            # Simplifies static file serving in production
 
