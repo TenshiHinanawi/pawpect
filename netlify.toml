@@ -1,5 +1,5 @@
 [build]
-  command = "pip install -r requirements.txt && npm install && python manage.py collectstatic --noinput && gunicorn pawpect_project.wsgi"
+  command = "pip install --upgrade pip && pip install -r requirements.txt && npm install && python manage.py collectstatic --noinput && gunicorn pawpect_project.wsgi"
   publish = "staticfiles"
 
 [dev]
