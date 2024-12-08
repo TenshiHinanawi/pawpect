@@ -36,5 +36,6 @@ sentry-sdk==1.29.2           # Error monitoring with Sentry
 
 # Replace mysqlclient with PyMySQL in your requirements.txt
 PyMySQL==1.0.2
-mysqlclient==2.1.1
+mysqlclient==2.2.0 --only-binary :all:
+
 
