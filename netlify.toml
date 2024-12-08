@@ -1,7 +1,7 @@
 [build]
-  command = "python manage.py collectstatic --noinput && gunicorn pawpect_project.wsgi"
+  command = "pip install -r requirements.txt && python manage.py collectstatic --noinput && gunicorn pawpect_project.wsgi"
   publish = "staticfiles"
 
 [dev]
-  command = "npm install && python manage.py runserver"
+  command = "python manage.py runserver"
   port = 8000
