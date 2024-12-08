@@ -3,5 +3,5 @@
   publish = "staticfiles"
 
 [dev]
-  command = "python manage.py runserver"
+  command = "npm install && python manage.py runserver"
   port = 8000
