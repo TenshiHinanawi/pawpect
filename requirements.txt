@@ -4,7 +4,6 @@ asgiref==3.6.0               # ASGI framework support
 sqlparse==0.4.4              # SQL parsing library used by Django
 
 # Database drivers (adjust based on your database)
-psycopg2-binary==2.9.7       # PostgreSQL database backend (use if needed)
 mysqlclient==2.2.0           # MySQL database backend (use if needed)
 
 # Static files and media serving
