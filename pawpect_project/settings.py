@@ -1,7 +1,5 @@
 from pathlib import Path
 import os
-import pymysql
-pymysql.install_as_MySQLdb()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -67,6 +65,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pawpect_project.wsgi.application'
 
+import pymysql
+pymysql.install_as_MySQLdb()
 # Database settings
 DATABASES = {
     'default': {
