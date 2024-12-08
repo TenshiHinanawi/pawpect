@@ -30,8 +30,7 @@ django-celery-beat>=2.7,<3.0
 # Monitoring (optional)
 sentry-sdk==1.29.2           # Error monitoring with Sentry
 
-# Replace mysqlclient with PyMySQL in your requirements.txt
-mysqlclient==1.4.6
+PyMySQL==1.0.2
 
 
 
