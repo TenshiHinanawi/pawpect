@@ -1,0 +1,24 @@
+{
+  "name": "pawpect_project",
+  "version": "1.0.0",
+  "description": "pawpect",
+  "main": "index.js",
+  "scripts": {
+    "test": "$test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TenshiHinanawi/pawpect.git"
+  },
+  "author": "kurumi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TenshiHinanawi/pawpect/issues"
+  },
+  "homepage": "https://github.com/TenshiHinanawi/pawpect#readme",
+  "dependencies": {
+    "next": "^15.0.4",
+    "react-scripts": "^5.0.1",
+    "webpack": "^5.97.1"
+  }
+}
