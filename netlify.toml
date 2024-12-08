@@ -1,7 +1,27 @@
 [build]
-  command = "pip install --upgrade pip && pip install -r requirements.txt && npm install && python manage.py collectstatic --noinput && gunicorn pawpect_project.wsgi"
+  command = """
+    # Install system dependencies for mysqlclient or other packages
+    apt-get update && apt-get install -y libmysqlclient-dev pkg-config
+    
+    # Install Python dependencies
+    pip install --upgrade pip
+    pip install -r requirements.txt
+    
+    # Collect static files
+    python manage.py collectstatic --noinput
+    
+    # Run Gunicorn to serve the app
+    gunicorn pawpect_project.wsgi
+  """
   publish = "staticfiles"
 
 [dev]
-  command = "python manage.py runserver"
+  command = """
+    # Install dependencies for development environment
+    pip install --upgrade pip
+    pip install -r requirements.txt
+    
+    # Run Django development server
+    python manage.py runserver 0.0.0.0:8000
+  """
   port = 8000
