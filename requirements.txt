@@ -8,7 +8,7 @@ async-lru==2.0.0
 attrs==22.2.0
 babel==2.12.1
 beautifulsoup4==4.12.2
-bleach==4.4.3
+bleach==6.1.0  # Updated to a version that should work
 certifi==2023.6.0
 cffi==1.15.1
 charset-normalizer==3.2.0
